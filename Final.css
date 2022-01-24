@@ -1,0 +1,509 @@
+body {
+    overflow-x: hidden;
+    font: roboto;
+}
+
+
+.headertot {
+    width: 100vw;
+    border-bottom: 1px solid #DBDBDB;
+}
+.headertot_mobile {
+    display: none;
+    width: 614px;
+}
+@media (max-width: 614px) {
+    .headertot {
+        display: none; 
+}
+}
+
+@media (max-width: 614px) {
+    .headertot_mobile {
+        display: flex; 
+}
+}
+
+.header-content {
+    margin-left: 165px;
+    margin: auto; 
+
+    width: 100vw;
+    max-width: 934px;
+    height: 54px;
+    background-color: #FFFFFF;
+   
+
+
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left img {
+    width: 103px;
+    height: 29px;
+    margin-left: 10px;
+}
+  /*parte responsiva*/
+  @media (max-width: 835px) {
+       .header-content {
+        width: 614px; /* Somente em telas menores que 600px, a largura passará a ser 100% em vez de 900px */
+    }
+}
+
+
+.icon-insta {
+    font-size: 26px;
+    margin-left: 10px;
+}
+
+.barra-vertical {
+    width: 1px;
+    height: 22px;
+    margin-left: 10px;
+    background: #DBDBDB;
+}
+
+.header-mid input {
+    
+    border: 1px solid #DBDBDB;
+    border-radius: 3px;
+    width: 266px;
+    height: 36px;
+    background-color: #FAFAFA;
+}
+
+.header-mid input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #979797;
+    text-align: center;
+    font-size: 12px;
+  }
+  .header-mid input::-moz-placeholder { /* Firefox 19+ */
+    color: #979797;
+    text-align: center;
+    font-size: 12px;
+  }
+  .header-mid input::-ms-input-placeholder { /* IE 10+ */
+    color: #979797;
+    text-align: center;
+    font-size: 12px;
+  }
+  .header-mid input::-moz-placeholder { /* Firefox 18- */
+    color: #979797;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .header-mid input:focus {
+      outline: none;
+  }
+  .icons-right {
+      margin-right: 15px;
+  }
+/* Aqui está todo o conteudo da pagina abaixo da barra de topo */
+
+.box-site {
+    /* width: 100vw; */
+    max-width: 934px;
+    /* height: 100vh; */   
+    margin: auto;
+    background-color: #FFFFFF;
+}
+/* Aqui está todo o conteudo do story */
+
+.box-stories {
+
+    width: 614px;
+    height: 118px;
+
+    /* background: #FFFFFF; */
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-top: 24px;
+
+    overflow-x: hidden;
+    background-color: #FFFFFF;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    position: relative;
+} 
+.box-overflow {
+    display: flex;
+}
+
+.story-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 15px;
+}
+.setastory {
+    position: absolute;
+    right: 0;
+    font-size: 26px;
+    border-radius: 13px;
+    color: #FFFFFF;
+    
+}
+
+
+.story-images {
+    width: 66px;
+    height: 66px;
+    border-radius: 50px;
+
+    background-image: url("Arquivosuteis/stories_background.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.story-images img {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+}
+/*Aqui acabam os storys e começam os posts*/
+
+.posts {
+    width: 934px;
+    height: auto;  
+
+    margin: 10px 0;
+    margin-bottom: 10px;
+    margin-top: 0px; 
+    display: flex;
+    
+   
+    
+    background-color: #FFFFFF;
+    
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.LE {
+    width: 612px;
+    height: auto;
+}
+.LD {
+    width: 350px;
+    height: auto;
+    margin-left: 20px;
+
+}
+.barratopo_colunapost p {
+    font-size: 14px;
+    margin-right: 0px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+.coluna_de_posts {
+
+
+    background: #FFFFFF;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-top: 60px;
+
+   
+	align-items: center;
+    width: 614px;
+    height: auto;
+    background-color: #FFFFFF;
+}
+.coluna_de_posts img {
+width: 612px;
+height: 612px;
+
+}
+.barra-topo {
+    display: flex;
+	align-items: center;
+    width: 612px;
+    height: 61px;
+    background-color: #FFFFFF;
+   /* border: 1px solid #DBDBDB;*/
+
+}
+.barra-topo img {
+    width: 32px;
+    height: 30px;
+ /*   border: 1px solid #DBDBDB; */
+    box-sizing: border-box;
+    border-radius: 12px;
+    background-image: url(arquivosuteis/stories_background.jpg);
+    border-radius: 36px;
+    margin-right: 10px;
+    margin-left: 17px;
+    
+
+    
+}
+.barra-topo p {
+    font-size: 14px;
+    margin-right: 440px;
+}
+.iconscoluna {
+    font-size: 17px;
+    width: 612px;
+    height: 42px;
+    background-color: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  /*  border-right: 1px solid #DBDBDB;
+    border-left: 1px solid #DBDBDB;
+    border-top: 1px solid #DBDBDB;
+    padding-top: ; */
+}
+
+.ID {
+    margin-left: 10px;
+    justify-content: space-around;
+
+}
+.IE {
+    margin-right: 10px;
+    
+}
+.curtidas {
+    width: 610px;
+    height: 29px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+ /*   border-bottom: 1px solid #DBDBDB;
+    border-left: 1px solid #DBDBDB;
+    border-right: 1px solid #DBDBDB; */
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    
+}
+.curtidas img {
+    width: 20px;
+    height: 
+    20px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-image: url(arquivosuteis/stories_background.jpg);
+    border-radius: 16px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+/*Aqui começa a sidebar*/
+
+.box-sidebar {
+
+    position: fixed;
+    width: 293px;
+    height: 600px;
+    margin-left: 15px;
+    margin-top: 50px;
+   
+   /* border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 3px;*/
+    background-color: #FFFFFF;
+} 
+
+.perfil {
+    display: flex;
+	align-items: center;
+    width: 293px;
+    height: 61px;
+    background-color: #FFFFFF;
+   
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+
+}
+.perfil img {
+    width: 66px;
+    height: 66px;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 56px;
+    margin-right: 5px;
+   /* background-image: url(arquivosuteis/stories_background.jpg);
+    border-radius: 16px;
+    margin-right: 10px;
+    margin-left: 17px; 
+
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;*/
+}
+.perfil sub{
+    
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+color: #8E8E8E
+}
+.sugestoes1 {
+    width: 293px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    align-items: center;
+}
+.sugestoes2 .perfil2 {
+    background-color: #FFFFFF;
+
+}
+.sugestoes1 p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    
+    color: #8E8E8E;
+}
+.sug1 {
+    
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 14px;
+display: flex;
+align-items: center;
+text-align: right;
+
+color: #262626;
+}
+
+.perfil2 {
+    
+	display: flex;
+    justify-content: space-between;
+    width: 293px;
+    height: 61px;
+    background-color: #E5E5E5;
+}
+
+.seguir {
+    color: #139EF2;
+    ;
+}
+.d1 {
+    display: flex;
+}
+.perfilconteudo div {
+    display: flex;
+    margin-left: 100px;
+
+}
+.perfil2 img {
+    width: 32px;
+    height: 30px;
+    border: 1px solid #DBDBDB;
+    box-sizing: border-box;
+    border-radius: 3px;
+    background-image: url(arquivosuteis/stories_background.jpg);
+    border-radius: 16px;
+    margin-right: 10px;
+    margin-left: 17px; 
+}
+.Div Tsug {
+    color: blue;
+}
+.sugestoes2 {
+    display: flex;
+    align-items: flex-end;
+}
+.mensagemfinal1 {
+    
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 11px;
+line-height: 13px;
+display: flex;
+align-items: center;
+margin-top: 15px;
+color: #C7C7C7;
+}
+.mensagemfinal2 {
+    
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    color: #C7C7C7;
+    }
+
+    /*parte responsiva*/
+    @media (max-width: 935px) {
+        .box-sidebar {
+            display: none; /* Somente em telas menores que 600px, a largura passará a ser 100% em vez de 900px */
+        }
+    }
+
+.barra-mobile {
+        display: none;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        background: #FFFFFF;
+        border: 1px solid #DBDBDB;
+        right: 0;
+        left: 0px;
+        bottom: 0;
+        font-size: 25px;
+        
+        /*margin-right: 610px;*/
+        width: 612px;
+        height: 54px;
+        
+    }
+    @media (max-width: 614px) {
+        .barra-mobile {
+            display: flex; 
+    }
+}
